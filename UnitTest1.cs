@@ -102,8 +102,8 @@ namespace Selenium
         {
             driver.Navigate().GoToUrl("https://feedbackradar-dev.azurewebsites.net/beheer/");
 
-            InputByClass((ChromeDriver)driver, "class", "sc-fzoYkl jRkIgn", "damian.jaszewski@oke.pl");
-            InputByClass((ChromeDriver)driver, "class", "sc-fzoYkl jRkIgp", "Nikt!507");
+            InputByClass((ChromeDriver)driver, "class", "sc-fzoYkl jRkIgn", "login");
+            InputByClass((ChromeDriver)driver, "class", "sc-fzoYkl jRkIgp", "password");
             GetElement((ChromeDriver)driver, "button", "class", "sc-oTbqq cHPZj").Click();
             Thread.Sleep(500);
         }
